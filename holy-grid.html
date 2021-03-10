@@ -2,40 +2,35 @@
 <html lang="en">
 <head>
     <style>
+
         * {
             text-align: center;
         }
+
         body {
             margin: 0;
             min-height: 100vh;
-            display:flex;
-            flex-direction: column;
+            display: grid;
+            grid-template-rows: 20% auto 20%;
         }
+
+        header, footer {
+            background-color: cyan;
+            
+        }
+
         main {
-            display:flex;
-            flex-grow: 4;
+            display: grid;
+            grid-template-columns: 20% auto 20%;
+
         }
 
-        header {
-            background-color: cyan;
-            flex-grow: 1;
-        }
-        footer {
-            background-color: cyan;
-            flex-grow: 1;
-        }
-
-        nav {
+        nav, aside {
             background-color: blue;
-            flex-grow: 2;
         }
+
         article {
             background-color: red;
-            flex-grow: 6;
-        }
-        aside {
-            background-color: blue;
-            flex-grow: 2;
         }
 
     </style>
